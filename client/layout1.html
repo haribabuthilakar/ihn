@@ -1,0 +1,58 @@
+<template name="layout1">
+    <!-- topbar starts -->
+          {{> nav}}
+	<!-- topbar ends -->
+	<div class="container-fluid">
+		<div class="row-fluid">
+				
+			<!-- left menu starts -->
+              {{> leftmenu}}
+			<!-- left menu ends -->
+			
+			<noscript>
+				<div class="alert alert-block span10">
+					<h4 class="alert-heading">Warning!</h4>
+					<p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
+				</div>
+			</noscript>
+			
+			<div id="content" class="span10">
+			<!-- content starts -->
+			{{#if isFamilyDashboard}}
+              {{> dashboard1}}
+              {{> dashboard3a}}
+              {{> dashboard3b}}
+            {{/if}}
+
+			{{#if isManageFamily}}
+              {{> managefamily}}
+            {{/if}}
+
+			{{#if isManageContacts}}
+              {{> managecontacts}}
+            {{/if}}
+            
+			{{#if isAddMember}}
+              {{> addmember}}
+            {{/if}}
+            
+			{{#if isAddContact}}
+              {{> addcontact}}
+            {{/if}}
+            
+			{{#if isImmunization}}
+              {{> immunization}}
+            {{/if}}
+            
+			<!-- content ends -->
+		</div><!--/#content.span10-->
+	</div><!--/fluid-row-->
+				
+		<hr>
+
+      {{> modal}}
+      {{> footer}}
+
+		
+	</div><!--/.fluid-container-->
+</template>

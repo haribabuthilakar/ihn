@@ -1,0 +1,62 @@
+<template name="addcontact">
+			<div class="row-fluid sortable">
+				<div class="box span12">
+					<div class="box-header well" data-original-title>
+						<h2><i class="icon-edit"></i> Add Contact</h2>
+						<div class="box-icon">
+							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
+						<form class="form-horizontal">
+						  <fieldset>
+							<div class="control-group">
+								<label class="control-label" for="focusedInput">Name</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="focusedInput" type="text" placeholder="Name">
+								</div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="typeahead">Type </label>
+							  <div class="controls">
+								<input type="text" class="input-xlarge typeahead" id="typeahead" placeholder="Select type of contact" data-provide="typeahead" data-items="4" data-source='["Paediatrician", "General Practitioner", "Surgeon", "Hospital", "Diagnostic Lab"]'>
+							  </div>
+							</div>
+
+							<div class="control-group">
+								<label class="control-label" for="focusedInput">Phone</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="focusedInput" type="text" placeholder="Phone...">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="focusedInput">Address 1</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="focusedInput1" type="text" placeholder="Address Line 1">
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="focusedInput">Address 2</label>
+								<div class="controls">
+								  <input class="input-xlarge focused" id="focusedInput2" type="text" placeholder="Address Line 2">
+								</div>
+							</div>
+							<div class="control-group">
+							  <label class="control-label" for="typeahead">City </label>
+							  <div class="controls">
+								<input type="text" class="input-xlarge typeahead" id="typeahead" placeholder="Select City" data-provide="typeahead" data-items="4" data-source='["Hyderabad", "Bangalore", "Mumbai", "Pune", "Kolkata", "New Delhi", "Chennai", "Ahmedabad", "Nagpur", "Bhopal", "Kanpur", "Lucknow", "Chandigarh", "Jaipur", "Trivandrum", "Bhubhaneswar", "Bhilai", "Patna", "Srinagar", "Goa", "Pondichery", "Ranchi", "Shillong", "Guwahati", "Kohima", "Imphal"]'>
+							  </div>
+							</div>
+
+							<div class="form-actions">
+							  <button type="submit" class="btn btn-primary">Save changes</button>
+							  <button type="reset" class="btn">Cancel</button>
+							</div>
+						  </fieldset>
+						</form>   
+
+					</div>
+				</div><!--/span-->
+
+			</div><!--/row-->
+</template>
